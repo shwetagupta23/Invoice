@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "autoname": "autoincrement",
+ "creation": "2024-09-20 18:57:29.825088",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "items",
+  "section_break_alwv",
+  "total_amount",
+  "discount",
+  "payable_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_alwv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Item"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Int",
+   "label": "Total amount",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Percent",
+   "label": "Discount"
+  },
+  {
+   "fieldname": "payable_amount",
+   "fieldtype": "Int",
+   "label": "Payable amount",
+   "non_negative": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-09-21 15:12:55.992347",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "invoice",
+ "naming_rule": "Autoincrement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
